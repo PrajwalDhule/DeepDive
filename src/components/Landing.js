@@ -1,31 +1,41 @@
-import React from "react";
+import { React, useState } from "react";
 import cloud1 from "../assets/cloud_1.png";
 import cloud2 from "../assets/cloud_2.png";
 import cloud3 from "../assets/cloud_4.png";
 
 function Landing() {
+  const [translate, setTranslate] = useState("0");
+
+  // const setTranslate = (value) => {
+  //   // let page = document.getElementsByClassName("landing-body");
+  //   let page = document.getElementById("first-body");
+  //   page.style.transform = `translateY(${value}vh)`;
+  // };
+
   return (
-    <div className="landing-body">
-      <nav>
-        <div className="nav-container">
-          <a className="nav-logo">Logo</a>
-          <div className="line"></div>
-          {/* <div className="nav-items">
+    <>
+      <div id="first-body">
+        <div className="landing-body">
+          <nav>
+            <div className="nav-container">
+              <a className="nav-logo">Logo</a>
+              <div className="line"></div>
+              {/* <div className="nav-items">
             <a href="/">Journeys</a>
             <a href="/">About</a>
             <a href="/">Get Involved</a>
             <a href="/">Share</a>
           </div> */}
-        </div>
-      </nav>
-      <div className="header">
-        {/* <img className="cloud1" src={cloud1} alt="" />
+            </div>
+          </nav>
+          <div className="header">
+            {/* <img className="cloud1" src={cloud1} alt="" />
         <img className="cloud2" src={cloud2} alt="" />
         <img className="cloud3" src={cloud3} alt="" /> */}
-        {/*Content before waves*/}
-        <div className="inner-header flex">
-          {/*Just the logo.. Don't mind this*/}
-          {/* <svg
+            {/*Content before waves*/}
+            <div className="inner-header flex">
+              {/*Just the logo.. Don't mind this*/}
+              {/* <svg
             version="1.1"
             className="logo"
             baseProfile="tiny"
@@ -53,60 +63,107 @@ function Landing() {
               />
             </g>
           </svg> */}
-          <div className="heading">
-            <h1>Welcome! </h1>
-            <h2>Whoever You Are</h2>
-            <div class="pseudo-partial-border btn">Explore</div>
+              <div className="heading">
+                <h1>Welcome! </h1>
+                <h2>Whoever You Are</h2>
+                {/* href="#option-body" */}
+                <a
+                  onClick={() => {
+                    setTranslate("-100");
+                  }}
+                  class="pseudo-partial-border btn"
+                >
+                  Explore
+                </a>
+              </div>
+            </div>
+            {/*Waves Container*/}
+            <div
+              className="wave-container"
+              style={{ transform: `translateY(${translate}vh)` }}
+            >
+              <svg
+                className="waves"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlnsXlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28"
+                preserveAspectRatio="none"
+                shapeRendering="auto"
+              >
+                <defs>
+                  <path
+                    id="gentle-wave"
+                    d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+                  />
+                </defs>
+                <g className="parallax">
+                  <use
+                    xlinkHref="#gentle-wave"
+                    x={48}
+                    y={0}
+                    fill="rgb(50, 150, 255)"
+                  />
+                  <use
+                    xlinkHref="#gentle-wave"
+                    x={48}
+                    y={0}
+                    fill="rgb(0, 115, 255)"
+                  />
+                  <use
+                    xlinkHref="#gentle-wave"
+                    x={48}
+                    y={3}
+                    fill="rgb(36, 44, 255)"
+                  />
+                  <use
+                    xlinkHref="#gentle-wave"
+                    x={48}
+                    y={5}
+                    fill="rgb(19, 25, 190)"
+                  />
+                  {/* <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" /> */}
+                </g>
+              </svg>
+            </div>
+            {/*Waves end*/}
           </div>
         </div>
-        {/*Waves Container*/}
-        <div>
-          <svg
-            className="waves"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlnsXlink="http://www.w3.org/1999/xlink"
-            viewBox="0 24 150 28"
-            preserveAspectRatio="none"
-            shapeRendering="auto"
+        <div
+          id="option-body"
+          className=""
+          style={{ transform: `translateY(${translate}vh)` }}
+        >
+          <a
+            onClick={() => {
+              setTranslate("0");
+            }}
+            className="up"
           >
-            <defs>
-              <path
-                id="gentle-wave"
-                d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
-              />
-            </defs>
-            <g className="parallax">
-              <use
-                xlinkHref="#gentle-wave"
-                x={48}
-                y={0}
-                fill="rgb(50, 150, 255)"
-              />
-              <use
-                xlinkHref="#gentle-wave"
-                x={48}
-                y={0}
-                fill="rgb(0, 115, 255)"
-              />
-              <use
-                xlinkHref="#gentle-wave"
-                x={48}
-                y={3}
-                fill="rgb(36, 44, 255)"
-              />
-              <use
-                xlinkHref="#gentle-wave"
-                x={48}
-                y={5}
-                fill="rgb(19, 25, 190)"
-              />
-              {/* <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" /> */}
-            </g>
-          </svg>
+            up
+          </a>
+          <div className="options">
+            <a className="">
+              <div>
+                <p>1</p>
+              </div>
+              <p>Option 1</p>
+            </a>
+            <a className="">
+              <div>
+                <p>2</p>
+              </div>
+              <p>Option 2</p>
+            </a>
+            <a className="">
+              <div>
+                <p>3</p>
+              </div>
+              <p>Option 3</p>
+            </a>
+          </div>
         </div>
-        {/*Waves end*/}
       </div>
-    </div>
+    </>
   );
 }
 

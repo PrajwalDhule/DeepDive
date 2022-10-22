@@ -1,0 +1,78 @@
+#option-body {
+  -webkit-transition: -webkit-transform 2.5s 250ms;
+  transition: -webkit-transform 2.5s 250ms;
+  transition: transform 2.5s 250ms;
+  transition: transform 2.5s 250ms, -webkit-transform 2.5s 250ms;
+  position: relative;
+  z-index: 2;
+  height: 100vh;
+  background-color: #1319be;
+}
+
+#option-body .up {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 25%;
+  font-size: 2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+#option-body .options {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#option-body .options a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+#option-body .options a div {
+  border: 1px solid black;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 2.5em;
+  height: 2.5em;
+}
+
+#option-body .options a + a {
+  margin-left: 5em;
+}
+/*# sourceMappingURL=options.css.map */
