@@ -1,27 +1,31 @@
 import React from "react";
+import cloud1 from "../assets/cloud_1.png";
+import cloud2 from "../assets/cloud_2.png";
+import cloud3 from "../assets/cloud_4.png";
 
 function Landing() {
   return (
     <div className="landing-body">
       <nav>
         <div className="nav-container">
-          <div className="nav-logo">Logo</div>
-          <div className="nav-items">
+          <a className="nav-logo">Logo</a>
+          <div className="line"></div>
+          {/* <div className="nav-items">
             <a href="/">Journeys</a>
             <a href="/">About</a>
             <a href="/">Get Involved</a>
             <a href="/">Share</a>
-          </div>
+          </div> */}
         </div>
       </nav>
       <div className="header">
-        <img className="cloud1" src="/cloud 1.png" alt="" />
-        <img className="cloud2" src="/cloud 1.png" alt="" />
-        <img className="cloud3" src="/cloud 1.png" alt="" />
+        {/* <img className="cloud1" src={cloud1} alt="" />
+        <img className="cloud2" src={cloud2} alt="" />
+        <img className="cloud3" src={cloud3} alt="" /> */}
         {/*Content before waves*/}
         <div className="inner-header flex">
           {/*Just the logo.. Don't mind this*/}
-          <svg
+          {/* <svg
             version="1.1"
             className="logo"
             baseProfile="tiny"
@@ -48,8 +52,12 @@ function Landing() {
                   c-22.4,3-38.4,9.2-47.8,18.3c-11.2,10.9-13.6,26.7-16.3,45c-3.1,20.8-6.6,44.4-25.3,62.4c-19.8,19.1-51.6,26.9-100.2,24.6l1.8-39.7		c35.9,1.6,59.7-2.9,70.8-13.6c8.9-8.6,11.1-22.9,13.5-39.6c6.3-42,14.8-99.4,141.4-99.4h41L333,166c-12.6,16-45.4,68.2-31.2,96.2	c9.2,18.3,41.5,25.6,91.2,24.2l1.1,39.8C390.5,326.2,387.1,326.3,383.8,326.3z"
               />
             </g>
-          </svg>
-          <h1>Welcome! Whoever You Are</h1>
+          </svg> */}
+          <div className="heading">
+            <h1>Welcome! </h1>
+            <h2>Whoever You Are</h2>
+            <div class="pseudo-partial-border btn">Explore</div>
+          </div>
         </div>
         {/*Waves Container*/}
         <div>
@@ -72,25 +80,25 @@ function Landing() {
                 xlinkHref="#gentle-wave"
                 x={48}
                 y={0}
-                fill="rgba(96, 126, 255, 0.2)"
+                fill="rgb(50, 150, 255)"
               />
               <use
                 xlinkHref="#gentle-wave"
                 x={48}
                 y={0}
-                fill="rgba(50, 50, 200, 0.7)"
+                fill="rgb(0, 115, 255)"
               />
               <use
                 xlinkHref="#gentle-wave"
                 x={48}
                 y={3}
-                fill="rgba(96, 126, 255, 0.5)"
+                fill="rgb(36, 44, 255)"
               />
               <use
                 xlinkHref="#gentle-wave"
                 x={48}
                 y={5}
-                fill="rgba(96, 126, 255, 0.3)"
+                fill="rgb(19, 25, 190)"
               />
               {/* <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" /> */}
             </g>
