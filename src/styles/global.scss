@@ -1,0 +1,8 @@
+* {
+  box-sizing: border-box;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+#first-body {
+  transition: transform 2s 250ms;
+}

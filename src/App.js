@@ -6,6 +6,8 @@ import Option from "./components/Option";
 import Plankton from "./components/Plankton";
 import Cursor from "./components/Cursor";
 import "./styles/landing.css";
+import "./styles/global.css";
+import "./styles/options.css";
 import "./styles/light.css";
 import "./styles/option.css";
 import "./styles/plankton.css";

@@ -1,32 +1,90 @@
 @import url(//fonts.googleapis.com/css?family=Lato:300:400:500:600);
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
-* {
-  box-sizing: border-box;
-}
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
 
 .landing-body {
+  padding: 0;
   margin: 0;
   min-height: 100vh;
+  position: relative;
+  z-index: 0;
   /* background: linear-gradient(
     60deg,
     rgb(150, 195, 246) 0%,
     rgb(219, 236, 255) 0%
   ); */
-  /* background-color: rgba(96, 126, 255, 0.7); */
   overflow-x: hidden;
-  // background-image: url("cloud_4.jpg");
+  background-image: url("../assets/sky_bg_4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 
-  h1 {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    letter-spacing: 2px;
-    font-size: 48px;
+  .heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5em;
+    h1 {
+      -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color: white;
+    }
+    h2 {
+      color: white;
+    }
+    h1,
+    h2 {
+      text-transform: uppercase;
+      font-family: "Rajdhani", sans-serif;
+      font-weight: 700;
+      letter-spacing: 2px;
+      font-size: 4rem;
+    }
+    a {
+      text-decoration: none;
+      color: white;
+    }
+    .pseudo-partial-border {
+      text-transform: uppercase;
+      font-weight: 400;
+      width: -moz-fit-content;
+      width: fit-content;
+      position: relative;
+      padding: 0.75em 2.5em;
+      margin-top: 1em;
+      border: none;
+      text-align: center;
+      cursor: pointer;
+    }
+    .pseudo-partial-border::before,
+    .pseudo-partial-border::after {
+      position: absolute;
+      width: 25%;
+      height: 25%;
+      content: "";
+      transition: width 250ms, height 250ms;
+    }
+    .pseudo-partial-border::before {
+      left: 0;
+      top: 0;
+      border-left: 2px solid white;
+      border-top: 2px solid white;
+    }
+    .pseudo-partial-border::after {
+      right: 0;
+      bottom: 0;
+      border-right: 2px solid white;
+      border-bottom: 2px solid white;
+    }
+    .pseudo-partial-border:hover::before,
+    .pseudo-partial-border:hover::after {
+      width: calc(100% - 3px);
+      height: calc(100% - 3px);
+    }
   }
+
   p {
-    font-family: "Lato", sans-serif;
+    font-family: "Poppins", sans-serif;
     letter-spacing: 1px;
     font-size: 14px;
     color: #333333;
@@ -34,20 +92,29 @@
 
   nav {
     position: absolute;
-    z-index: 2;
+    z-index: 1;
     padding: 1.5em 2em;
     width: 100vw;
     font-family: "Poppins", sans-serif;
     font-size: 1.25rem;
     .nav-container {
       display: flex;
-      justify-content: space-between;
+      //   justify-content: space-between;
+      justify-content: left;
+      align-items: center;
       a {
         text-decoration: none;
-        color: rgb(6, 6, 122);
+        color: rgb(255, 255, 255);
         font-size: 1.25rem;
       }
       a + a {
+        margin-left: 1em;
+      }
+      .line {
+        height: 1px;
+        width: 30vw;
+        background-color: white;
+        border-radius: 5px;
         margin-left: 1em;
       }
     }
@@ -56,13 +123,14 @@
   .header {
     position: relative;
     text-align: center;
-    background: linear-gradient(
-      60deg,
-      rgb(150, 195, 246) 0%,
-      rgb(219, 236, 255) 0%
-    );
+    // background: linear-gradient(
+    //   60deg,
+    //   rgb(150, 195, 246) 0%,
+    //   rgb(219, 236, 255) 0%
+    // );
     /* color: white; */
-    color: rgb(6, 6, 122);
+    background-color: rgba(1, 1, 66, 0.5);
+    // color: rgb(255, 255, 255);
     font-weight: 600;
     bottom: 0;
     img {
@@ -70,7 +138,7 @@
     }
     .cloud1 {
       left: 50px;
-      height: 300px;
+      height: 250px;
       z-index: -1;
     }
     .cloud2 {
@@ -79,8 +147,8 @@
     .cloud3 {
       bottom: 200px;
       right: 50px;
+      //   height: 100px;
     }
-    z-index: 0;
   }
   .logo {
     width: 50px;
@@ -106,13 +174,18 @@
     text-align: center;
   }
 
-  .waves {
+  .wave-container {
+    transition: transform 2.5s 250ms;
     position: relative;
-    width: 100%;
-    height: 25vh;
-    margin-bottom: -7px; /*Fix for safari gap*/
-    min-height: 100px;
-    /* max-height: 150px; */
+    z-index: 2;
+    .waves {
+      position: relative;
+      width: 100%;
+      height: 27.5vh;
+      margin-bottom: -7px; /*Fix for safari gap*/
+      min-height: 100px;
+      /* max-height: 150px; */
+    }
   }
 
   .content {
@@ -130,19 +203,19 @@
   }
   .parallax > use:nth-child(1) {
     animation-delay: -2s;
-    animation-duration: 7s;
+    animation-duration: 5s;
   }
   .parallax > use:nth-child(2) {
     animation-delay: -3s;
-    animation-duration: 10s;
+    animation-duration: 8s;
   }
   .parallax > use:nth-child(3) {
     animation-delay: -4s;
-    animation-duration: 13s;
+    animation-duration: 11s;
   }
   .parallax > use:nth-child(4) {
     animation-delay: -5s;
-    animation-duration: 20s;
+    animation-duration: 16s;
   }
 }
 
