@@ -1,0 +1,44 @@
+.atlantic-body {
+  //   overflow: auto;
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  position: relative;
+  z-index: 0;
+  //   overflow-x: hidden;
+  //   background-image: url("../assets/uw_bg_1.jpg");
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   background: linear-gradient(rgb(8, 69, 113), rgb(5, 41, 67));
+  background: linear-gradient(
+    to bottom,
+    hsl(234.81, 65.82%, 30.98%) 0%,
+    hsl(234.71, 65.84%, 30.82%) 8.1%,
+    hsl(234.43, 65.9%, 30.35%) 15.5%,
+    hsl(233.98, 66%, 29.63%) 22.5%,
+    hsl(233.33, 66.14%, 28.66%) 29%,
+    hsl(232.48, 66.33%, 27.48%) 35.3%,
+    hsl(231.39, 66.59%, 26.11%) 41.2%,
+    hsl(230.02, 66.93%, 24.58%) 47.1%,
+    hsl(228.33, 67.39%, 22.92%) 52.9%,
+    hsl(226.25, 68.01%, 21.16%) 58.8%,
+    hsl(223.73, 68.84%, 19.35%) 64.7%,
+    hsl(220.73, 69.96%, 17.55%) 71%,
+    hsl(217.36, 71.44%, 15.85%) 77.5%,
+    hsl(213.93, 73.23%, 14.38%) 84.5%,
+    hsl(211.14, 74.96%, 13.34%) 91.9%,
+    hsl(210, 75.76%, 12.94%) 100%
+  );
+  .tuna {
+    position: absolute;
+    height: 50px;
+  }
+  //   .tuna:nth-child(1) {
+
+  //   }
+  .item1 {
+    position: absolute;
+    bottom: -5%;
+    left: -3%;
+  }
+}

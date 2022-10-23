@@ -69,7 +69,7 @@ function Landing() {
                 {/* href="#option-body" */}
                 <a
                   onClick={() => {
-                    setTranslate("-100");
+                    setTranslate("-102.5");
                   }}
                   class="pseudo-partial-border btn"
                 >
@@ -133,6 +133,7 @@ function Landing() {
           className=""
           style={{ transform: `translateY(${translate}vh)` }}
         >
+          <div className="light-ray"></div>
           <a
             onClick={() => {
               setTranslate("0");
@@ -142,11 +143,11 @@ function Landing() {
             up
           </a>
           <div className="options">
-            <a className="">
+            <a href="/atlantic" className="">
               <div>
                 <p>1</p>
               </div>
-              <p>Option 1</p>
+              <p>Atlantic</p>
             </a>
             <a className="">
               <div>
