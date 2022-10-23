@@ -1,10 +1,12 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import item1 from "../assets/underwater-items/item_1.png";
 import tuna from "../assets/fishes/tuna.png";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const Atlantic = () => {
+  const [stage, setStage] = useState(0);
+
   useEffect(() => {
     let wHeight = window.innerHeight;
     let wWidth = window.innerWidth;
@@ -62,20 +64,29 @@ const Atlantic = () => {
 
     gsap.registerPlugin(ScrollTrigger);
 
-    gsap.to(".item1", {
-      scrollTrigger: {
-        trigger: ".atlantic-body",
-        scrub: true,
-        start: "top top",
-        end: "+=500",
-      },
-      scale: 3,
-      x: -300,
-      y: 200,
-      ease: "none",
-      duration: 3,
-    });
+    // gsap.to(".item1", {
+    //   scrollTrigger: {
+    //     trigger: ".atlantic-body",
+    //     scrub: true,
+    //     start: "top top",
+    //     end: "+=500",
+    //   },
+    //   scale: 3,
+    //   x: -300,
+    //   y: 200,
+    //   ease: "none",
+    //   duration: 3,
+    // });
   }, []);
+
+  const moveAhead = () => {
+    setStage(stage + 1);
+    if (stage == 1) {
+      document.getElementById("item1").style.transform =
+        "translate(-300px, 200px) scale(2)";
+      document.getElementById("item1").style.opacity = "0";
+    }
+  };
 
   return (
     <div className="atlantic-body">
@@ -93,7 +104,14 @@ const Atlantic = () => {
       <img className="tuna" id="tuna7" src={tuna}></img>
       <img className="tuna" id="tuna8" src={tuna}></img>
       <img className="tuna" id="tuna9" src={tuna}></img>
-      <img className="item1" src={item1}></img>
+      <button
+        onClick={() => {
+          moveAhead();
+        }}
+      >
+        Move ahead
+      </button>
+      <img className="item1" id="item1" src={item1}></img>
     </div>
   );
 };
