@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.Anglerfish {
+  position: absolute;
+  height: 100px;
+  top: 80%;
+  right: 0%;
+  -webkit-animation: travel 50s infinite;
+          animation: travel 50s infinite;
+  overflow-block: hidden;
+}
+
+@-webkit-keyframes travel {
+  0% {
+    transform: translate(20%);
+  }
+  100% {
+    transform: translate(-1500%);
+  }
+}
+
+@keyframes travel {
+  0% {
+    transform: translate(20%);
+  }
+  100% {
+    transform: translate(-1500%);
+  }
+}
+@-webkit-keyframes wiggle {
+  0% {
+    transform: translateX(2%);
+  }
+  50% {
+    transform: translateY(-2%);
+  }
+  100% {
+    trnasform: rotate(-10deg);
+  }
+}
+@keyframes wiggle {
+  0% {
+    transform: translateX(2%);
+  }
+  50% {
+    transform: translateY(-2%);
+  }
+  100% {
+    trnasform: rotate(-10deg);
+  }
+}/*# sourceMappingURL=fish.css.map */
