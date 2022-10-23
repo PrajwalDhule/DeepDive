@@ -42,4 +42,42 @@
     left: -3%;
     transition: transform 1.5s, opacity 1.5s;
   }
+  .fish1,
+  .fish2,
+  .fish3 {
+    opacity: 0;
+    transition: transform 1.5s, opacity 1.5s;
+  }
+  button {
+    background-color: blue;
+    border: none;
+    padding: 0.5em 1em;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+  }
+  .fish1 {
+    position: absolute;
+    height: 200px;
+    right: 0;
+    top: 200px;
+  }
+  .fish2 {
+    position: absolute;
+    height: 300px;
+  }
+  .fish3 {
+    position: absolute;
+    height: 250px;
+    top: 50%;
+    left: 30%;
+  }
+  .info {
+    opacity: 0;
+    transition: transform 1.5s, opacity 1.5s;
+  }
 }

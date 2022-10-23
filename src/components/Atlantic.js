@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from "react";
 import item1 from "../assets/underwater-items/item_1.png";
 import tuna from "../assets/fishes/tuna.png";
+import fish1 from "../assets/fishes/fish1.png";
+import fish2 from "../assets/fishes/fish2.png";
+import fish3 from "../assets/fishes/fish3.png";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -85,8 +88,16 @@ const Atlantic = () => {
       document.getElementById("item1").style.transform =
         "translate(-300px, 200px) scale(2)";
       document.getElementById("item1").style.opacity = "0";
+      document.getElementById("fish1").style.opacity = "1";
+      document.getElementById("fish2").style.opacity = "1";
+      document.getElementById("fish3").style.opacity = "1";
+      document.getElementById("info").style.opacity = "1";
     }
   };
+
+  //   const info = (no) =>{
+
+  //   }
 
   return (
     <div className="atlantic-body">
@@ -112,6 +123,62 @@ const Atlantic = () => {
         Move ahead
       </button>
       <img className="item1" id="item1" src={item1}></img>
+      <img
+        // onClick={() => {
+        //   info(3);
+        // }}
+        className="fish2"
+        id="fish2"
+        src={fish2}
+      ></img>
+      <img
+        // onClick={() => {
+        //   info(2);
+        // }}
+        className="fish3"
+        id="fish3"
+        src={fish3}
+      ></img>
+      <img
+        // onClick={() => {
+        //   info(1);
+        // }}
+        className="fish1"
+        id="fish1"
+        src={fish1}
+      ></img>
+      <div className="info" id="info">
+        <p className="info1">
+          The European eel (Anguilla anguilla)[3] is a species of eel, a
+          snake-like, catadromous fish. They are normally around 60–80 cm
+          (2.0–2.6 ft) and rarely reach more than 1 m (3 ft 3 in), but can reach
+          a length of up to 1.5 m (4 ft 11 in) in exceptional cases. Eels have
+          been important sources of food both as adults (including jellied eels
+          of East London) and as glass eels. Glass-eel fishing using basket
+          traps has been of significant economic value in many river estuaries
+          on the western seaboard of Europe.
+        </p>
+        <p className="info2">
+          The great hammerhead was first described as Zygaena mokarran in 1837
+          by German naturalist Eduard Rüppell. The name was later changed to the
+          current Sphyrna mokarran.[3] For many years, though, the valid
+          scientific name for the great hammerhead was thought to be Sphyrna
+          tudes, which was coined in 1822 by Achille Valenciennes. In 1950,
+          Enrico Tortonese determined that the specimens illustrated by
+          Valenciennes were in fact smalleye hammerheads, to which the name S.
+          tudes then applied. As the next-most senior synonym, Sphyrna mokarran
+          became the great hammerhead's valid name. The lectotype for this
+          species is a 2.5-m-long (8.2 ft) male from the Red Sea.[4]
+        </p>
+        <p className="info3">
+          The smalltooth sawfish (Pristis pectinata) is a species of sawfish in
+          the family Pristidae. It is found in shallow tropical and subtropical
+          waters in coastal and estuarine parts of the Atlantic.[1][3] Reports
+          from elsewhere are now believed to be misidentifications of other
+          species of sawfish.[1][4] It is a critically endangered species that
+          has disappeared from much of its historical range.[1]
+        </p>
+      </div>
     </div>
   );
 };
