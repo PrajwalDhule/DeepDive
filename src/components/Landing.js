@@ -2,6 +2,12 @@ import { React, useState } from "react";
 import cloud1 from "../assets/cloud_1.png";
 import cloud2 from "../assets/cloud_2.png";
 import cloud3 from "../assets/cloud_4.png";
+import Option from "./Option";
+import LightEffect from "./Lighteffect";
+import "../styles/option.css";
+import Angler from "./Anglerfish";
+import Octopus from "./Octopus";
+import Whale from "./Squid";
 
 function Landing() {
   const [translate, setTranslate] = useState("0");
@@ -134,15 +140,44 @@ function Landing() {
           style={{ transform: `translateY(${translate}vh)` }}
         >
           <div className="light-ray"></div>
-          <a
-            onClick={() => {
-              setTranslate("0");
-            }}
-            className="up"
-          >
-            up
-          </a>
-          <div className="options">
+
+          <LightEffect />
+          <section className="option-container">
+            <a
+              onClick={() => {
+                setTranslate("0");
+              }}
+              className="up"
+            >
+              up
+            </a>
+            <div className="op-box">
+              <h2 className="option-title">Explore the wonders of the Sea</h2>
+              <div className="op-choices">
+                <div className="coral-choice op-logo">Coral</div>
+                <div className="plankton-choice op-logo">Planktons</div>
+                <div className="coming-soon op-logo">
+                  <a href="/atlantic">Fishes</a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <Angler />
+          <Octopus />
+          <Whale />
+          <div id="background-wrap">
+            <div className="bubble x1"></div>
+            <div className="bubble x2"></div>
+            <div className="bubble x3"></div>
+            <div className="bubble x4"></div>
+            <div className="bubble x5"></div>
+            <div className="bubble x6"></div>
+            <div className="bubble x7"></div>
+            <div className="bubble x8"></div>
+            <div className="bubble x9"></div>
+            <div className="bubble x10"></div>
+          </div>
+          {/* <div className="options">
             <a href="/atlantic" className="">
               <div>
                 <p>1</p>
@@ -161,7 +196,7 @@ function Landing() {
               </div>
               <p>Option 3</p>
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

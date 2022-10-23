@@ -104,14 +104,12 @@
   width: calc(100% - 3px);
   height: calc(100% - 3px);
 }
-
 .landing-body p {
   font-family: "Poppins", sans-serif;
   letter-spacing: 1px;
   font-size: 14px;
   color: #333333;
 }
-
 .landing-body nav {
   position: absolute;
   z-index: 1;
@@ -120,10 +118,7 @@
   font-family: "Poppins", sans-serif;
   font-size: 1.25rem;
 }
-
 .landing-body nav .nav-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: left;
       -ms-flex-pack: left;
@@ -132,13 +127,11 @@
       -ms-flex-align: center;
           align-items: center;
 }
-
 .landing-body nav .nav-container a {
   text-decoration: none;
   color: white;
   font-size: 1.25rem;
 }
-
 .landing-body nav .nav-container a + a {
   margin-left: 1em;
 }
@@ -159,26 +152,21 @@
   font-weight: 600;
   bottom: 0;
 }
-
 .landing-body .header img {
   position: absolute;
 }
-
 .landing-body .header .cloud1 {
   left: 50px;
   height: 250px;
   z-index: -1;
 }
-
 .landing-body .header .cloud2 {
   height: 175px;
 }
-
 .landing-body .header .cloud3 {
   bottom: 200px;
   right: 50px;
 }
-
 .landing-body .logo {
   width: 50px;
   fill: white;
@@ -187,25 +175,17 @@
   display: inline-block;
   vertical-align: middle;
 }
-
 .landing-body .inner-header {
   height: 75vh;
   width: 100%;
   margin: 0;
   padding: 0;
 }
-
 .landing-body .flex {
   /*Flexbox for containers*/
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
@@ -227,7 +207,6 @@
   min-height: 100px;
   /* max-height: 150px; */
 }
-
 .landing-body .content {
   position: relative;
   height: 25vh;
@@ -235,33 +214,28 @@
   /* background-color: white; */
   background-color: transparent;
 }
-
 .landing-body .parallax > use {
   -webkit-animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
           animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
 }
-
 .landing-body .parallax > use:nth-child(1) {
   -webkit-animation-delay: -2s;
           animation-delay: -2s;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
 }
-
 .landing-body .parallax > use:nth-child(2) {
   -webkit-animation-delay: -3s;
           animation-delay: -3s;
   -webkit-animation-duration: 8s;
           animation-duration: 8s;
 }
-
 .landing-body .parallax > use:nth-child(3) {
   -webkit-animation-delay: -4s;
           animation-delay: -4s;
   -webkit-animation-duration: 11s;
           animation-duration: 11s;
 }
-
 .landing-body .parallax > use:nth-child(4) {
   -webkit-animation-delay: -5s;
           animation-delay: -5s;
@@ -271,26 +245,21 @@
 
 @-webkit-keyframes move-forever {
   0% {
-    -webkit-transform: translate3d(-90px, 0, 0);
-            transform: translate3d(-90px, 0, 0);
+    transform: translate3d(-90px, 0, 0);
   }
   100% {
-    -webkit-transform: translate3d(85px, 0, 0);
-            transform: translate3d(85px, 0, 0);
+    transform: translate3d(85px, 0, 0);
   }
 }
 
 @keyframes move-forever {
   0% {
-    -webkit-transform: translate3d(-90px, 0, 0);
-            transform: translate3d(-90px, 0, 0);
+    transform: translate3d(-90px, 0, 0);
   }
   100% {
-    -webkit-transform: translate3d(85px, 0, 0);
-            transform: translate3d(85px, 0, 0);
+    transform: translate3d(85px, 0, 0);
   }
 }
-
 /*Shrinking for mobile*/
 @media (max-width: 768px) {
   .landing-body .waves {
@@ -303,5 +272,4 @@
   .landing-body h1 {
     font-size: 24px;
   }
-}
-/*# sourceMappingURL=landing.css.map */
+}/*# sourceMappingURL=landing.css.map */

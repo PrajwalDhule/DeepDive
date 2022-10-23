@@ -1,0 +1,28 @@
+.plankton-container {
+  min-height: 100vh;
+  background-color: rgb(0, 6, 37);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cursor {
+  z-index: 1000;
+  background-color: aqua;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  pointer-events: none;
+  box-shadow: 0 0 20px aqua, 0 0 60px rgb(0, 234, 255), 0 0 100px rgb(0, 191, 255);
+}
+
+.cursor:before {
+  content: "";
+  position: absolute;
+  background: aqua;
+  width: 50px;
+  height: 50px;
+  opacity: 0.2;
+  transform: translate(-30%, -30%);
+  border-radius: 50%;
+}/*# sourceMappingURL=plankton.css.map */
