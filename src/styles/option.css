@@ -17,7 +17,6 @@
 
 .op-box {
   margin: auto;
-  border: 2px solid red;
   width: 80vw;
 }
 
@@ -32,14 +31,35 @@
 .op-choices {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   -moz-column-gap: 2rem;
        column-gap: 2rem;
 }
 
 .op-logo {
-  height: 100px;
-  width: 100px;
-  background-color: aliceblue;
+  font-size: 2rem;
+}
+
+.coral-choice {
+  color: rgb(133, 0, 33);
+  text-shadow: 0 0 10px pink;
+  padding: 0.5rem 2rem;
+  border-radius: 100px;
+  background-color: greenyellow;
+}
+
+.plankton-choice {
+  color: aqua;
+  text-shadow: 0 0 10px aqua;
+  background-color: rgb(0, 6, 37);
+  padding: 0.5rem 2rem;
+  border-radius: 100px;
+}
+
+.coming-soon {
+  background-color: #024A9F;
+  padding: 0.5rem 2rem;
+  border-radius: 100px;
 }
 
 .bubble {
@@ -63,82 +83,82 @@
 }
 
 .x1 {
-  -webkit-animation: animateBubble 50s linear 9s infinite, sideWays 2s ease-in-out infinite alternate;
-  animation: animateBubble 50s linear 9s infinite, sideWays 2s ease-in-out infinite alternate;
-  left: 230px;
-  top: 226px;
-  transform: scale(0.3);
+  -webkit-animation: animateBubble 50s linear 10s infinite, sideWays 2s ease-in-out infinite alternate;
+  animation: animateBubble 50s linear 10s infinite, sideWays 2s ease-in-out infinite alternate;
+  left: 850px;
+  top: 529px;
+  transform: scale(0.1);
 }
 
 .x2 {
-  -webkit-animation: animateBubble 50s linear 3s infinite, sideWays 2s ease-in-out infinite alternate;
-  animation: animateBubble 50s linear 3s infinite, sideWays 2s ease-in-out infinite alternate;
-  left: 75px;
-  top: 994px;
+  -webkit-animation: animateBubble 50s linear 9s infinite, sideWays 2s ease-in-out infinite alternate;
+  animation: animateBubble 50s linear 9s infinite, sideWays 2s ease-in-out infinite alternate;
+  left: 467px;
+  top: 710px;
   transform: scale(0.5);
 }
 
 .x3 {
-  -webkit-animation: animateBubble 50s linear 8s infinite, sideWays 2s ease-in-out infinite alternate;
-  animation: animateBubble 50s linear 8s infinite, sideWays 2s ease-in-out infinite alternate;
-  left: 523px;
-  top: 482px;
-  transform: scale(0.5);
+  -webkit-animation: animateBubble 50s linear 1s infinite, sideWays 2s ease-in-out infinite alternate;
+  animation: animateBubble 50s linear 1s infinite, sideWays 2s ease-in-out infinite alternate;
+  left: 157px;
+  top: 261px;
+  transform: scale(0.3);
 }
 
 .x4 {
-  -webkit-animation: animateBubble 50s linear 6s infinite, sideWays 2s ease-in-out infinite alternate;
-  animation: animateBubble 50s linear 6s infinite, sideWays 2s ease-in-out infinite alternate;
-  left: 296px;
-  top: 169px;
+  -webkit-animation: animateBubble 50s linear 7s infinite, sideWays 2s ease-in-out infinite alternate;
+  animation: animateBubble 50s linear 7s infinite, sideWays 2s ease-in-out infinite alternate;
+  left: 483px;
+  top: 280px;
   transform: scale(0.1);
 }
 
 .x5 {
-  -webkit-animation: animateBubble 50s linear 13s infinite, sideWays 2s ease-in-out infinite alternate;
-  animation: animateBubble 50s linear 13s infinite, sideWays 2s ease-in-out infinite alternate;
-  left: 975px;
-  top: 597px;
-  transform: scale(0.4);
+  -webkit-animation: animateBubble 50s linear 3s infinite, sideWays 2s ease-in-out infinite alternate;
+  animation: animateBubble 50s linear 3s infinite, sideWays 2s ease-in-out infinite alternate;
+  left: 445px;
+  top: 106px;
+  transform: scale(0.1);
 }
 
 .x6 {
-  -webkit-animation: animateBubble 50s linear 8s infinite, sideWays 2s ease-in-out infinite alternate;
-  animation: animateBubble 50s linear 8s infinite, sideWays 2s ease-in-out infinite alternate;
-  left: 916px;
-  top: 463px;
+  -webkit-animation: animateBubble 50s linear 6s infinite, sideWays 2s ease-in-out infinite alternate;
+  animation: animateBubble 50s linear 6s infinite, sideWays 2s ease-in-out infinite alternate;
+  left: 163px;
+  top: 719px;
   transform: scale(0.3);
 }
 
 .x7 {
-  -webkit-animation: animateBubble 50s linear 14s infinite, sideWays 2s ease-in-out infinite alternate;
-  animation: animateBubble 50s linear 14s infinite, sideWays 2s ease-in-out infinite alternate;
-  left: 762px;
-  top: 832px;
-  transform: scale(0.1);
+  -webkit-animation: animateBubble 50s linear 11s infinite, sideWays 2s ease-in-out infinite alternate;
+  animation: animateBubble 50s linear 11s infinite, sideWays 2s ease-in-out infinite alternate;
+  left: 99px;
+  top: 98px;
+  transform: scale(0.5);
 }
 
 .x8 {
-  -webkit-animation: animateBubble 50s linear 6s infinite, sideWays 2s ease-in-out infinite alternate;
-  animation: animateBubble 50s linear 6s infinite, sideWays 2s ease-in-out infinite alternate;
-  left: 719px;
-  top: 963px;
+  -webkit-animation: animateBubble 50s linear 5s infinite, sideWays 2s ease-in-out infinite alternate;
+  animation: animateBubble 50s linear 5s infinite, sideWays 2s ease-in-out infinite alternate;
+  left: 389px;
+  top: 446px;
   transform: scale(0.5);
 }
 
 .x9 {
-  -webkit-animation: animateBubble 50s linear 13s infinite, sideWays 2s ease-in-out infinite alternate;
-  animation: animateBubble 50s linear 13s infinite, sideWays 2s ease-in-out infinite alternate;
-  left: 603px;
-  top: 588px;
-  transform: scale(0.3);
+  -webkit-animation: animateBubble 50s linear 5s infinite, sideWays 2s ease-in-out infinite alternate;
+  animation: animateBubble 50s linear 5s infinite, sideWays 2s ease-in-out infinite alternate;
+  left: 819px;
+  top: 231px;
+  transform: scale(0.4);
 }
 
 .x10 {
-  -webkit-animation: animateBubble 50s linear 11s infinite, sideWays 2s ease-in-out infinite alternate;
-  animation: animateBubble 50s linear 11s infinite, sideWays 2s ease-in-out infinite alternate;
-  left: 772px;
-  top: 624px;
+  -webkit-animation: animateBubble 50s linear 1s infinite, sideWays 2s ease-in-out infinite alternate;
+  animation: animateBubble 50s linear 1s infinite, sideWays 2s ease-in-out infinite alternate;
+  left: 777px;
+  top: 854px;
   transform: scale(0.2);
 }
 
@@ -163,7 +183,7 @@
     margin-left: 0px;
   }
   100% {
-    margin-left: 50px;
+    margin-left: 16px;
   }
 }
 @keyframes sideWays {
@@ -171,6 +191,6 @@
     margin-left: 0px;
   }
   100% {
-    margin-left: 50px;
+    margin-left: 55px;
   }
 }/*# sourceMappingURL=option.css.map */
