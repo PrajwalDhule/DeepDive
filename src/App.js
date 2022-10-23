@@ -17,8 +17,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           {/* <Route exact path="/" element={<Landing />}></Route> */}
-          <Route exact path="/" element={<Option />}></Route>
-          {/* <Route exact path="/" element={<Plankton />}></Route> */}
+          {/* <Route exact path="/" element={<Option />}></Route> */}
+          <Route exact path="/" element={<Plankton />}></Route>
           {/* <Route exact path="/" element={<LightEffect />}></Route> */}
         </Routes>
       </BrowserRouter>
