@@ -15,9 +15,23 @@
   transition: transform 2.5s 250ms;
   position: relative;
   z-index: 2;
-  height: 100vh;
+  height: 102.5vh;
   //   width: 100vw;
-  background-color: rgb(19, 25, 190);
+  // background-color: rgb(19, 25, 190);
+  background: linear-gradient(rgb(8, 69, 113), rgb(5, 41, 67));
+  // .light-ray {
+  //   width: 25px;
+  //   height: 50vh;
+  //   background: linear-gradient(
+  //     rgba(150, 195, 246, 0.5),
+  //     rgba(219, 236, 255, 0)
+  //   );
+  //   backdrop-filter: blur(100px);
+  // }
+  a {
+    text-decoration: none;
+    color: white;
+  }
   .up {
     @include center();
     top: 25%;

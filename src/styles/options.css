@@ -5,8 +5,14 @@
   transition: transform 2.5s 250ms, -webkit-transform 2.5s 250ms;
   position: relative;
   z-index: 2;
-  height: 100vh;
-  background-color: #1319be;
+  height: 102.5vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(#084571), to(#052943));
+  background: linear-gradient(#084571, #052943);
+}
+
+#option-body a {
+  text-decoration: none;
+  color: white;
 }
 
 #option-body .up {

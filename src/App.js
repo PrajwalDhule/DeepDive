@@ -1,6 +1,12 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
 import Landing from "./components/Landing";
+import Atlantic from "./components/Atlantic";
+import "./styles/landing.css";
+import "./styles/global.css";
+import "./styles/options.css";
+import "./styles/atlantic.css";
+
 import LightEffect from "./components/Lighteffect";
 import Option from "./components/Option";
 import Plankton from "./components/Plankton";
@@ -16,10 +22,13 @@ function App() {
     <div>
       <BrowserRouter>
         <Routes>
-          {/* <Route exact path="/" element={<Landing />}></Route> */}
+          <Route exact path="/" element={<Landing />}></Route>
           {/* <Route exact path="/" element={<Option />}></Route> */}
-          <Route exact path="/" element={<Plankton />}></Route>
+          {/* <Route exact path="/" element={<Plankton />}></Route> */}
           {/* <Route exact path="/" element={<LightEffect />}></Route> */}
+        </Routes>
+        <Routes>
+          <Route exact path="/atlantic" element={<Atlantic />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
