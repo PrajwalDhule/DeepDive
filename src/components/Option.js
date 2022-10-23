@@ -13,18 +13,15 @@ function Option() {
         <div className="op-box">
           <h2 className="option-title">Explore the wonders of the Sea</h2>
           <div className="op-choices">
-            <div className="coral-choice op-logo">
-              <Angler />
-            </div>
-            <div className="plankton-choice op-logo">
-              <Octopus />
-            </div>
-            <div className="coming-soon op-logo">
-              <Whale />
-            </div>
+            <div className="coral-choice op-logo">Coral</div>
+            <div className="plankton-choice op-logo">Planktons</div>
+            <div className="coming-soon op-logo">Coming soon</div>
           </div>
         </div>
       </section>
+      <Angler />
+      <Octopus />
+      <Whale />
       <div id="background-wrap">
         <div className="bubble x1"></div>
         <div className="bubble x2"></div>
