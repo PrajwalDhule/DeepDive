@@ -19,7 +19,7 @@
 
 .op-box{
     margin: auto;
-    border: 2px solid red;
+    // border: 2px solid red;
     width: 80vw;
     
 
@@ -36,13 +36,35 @@
 .op-choices{
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     column-gap: 2rem;
 }
 
 .op-logo{
-    height: 100px ;
-    width: 100px;
-    background-color: aliceblue;
+    font-size: 2rem;
+}
+
+.coral-choice{
+    color: rgb(133, 0, 33);
+    text-shadow: 0 0 10px pink;
+    padding: 0.5rem 2rem ;
+    border-radius: 100px;
+    background-color: greenyellow
+}
+
+.plankton-choice{
+    color: aqua;
+    text-shadow: 0 0 10px aqua;
+    background-color: rgb(0, 6, 37);
+    padding: 0.5rem 2rem ;
+    border-radius: 100px;
+}
+
+.coming-soon{
+    background-color: #024A9F;
+    padding: 0.5rem 2rem ;
+    border-radius: 100px;
+
 }
 
 
@@ -59,6 +81,7 @@
     height: 100px;
 	position: absolute;
 	width: 100px;
+    // z-index: -1;
 }
 
 .bubble:after {
@@ -143,7 +166,7 @@
         margin-left:0px;
     }
     100% { 
-        margin-left:50px;
+        margin-left:random(80)+px;
     }
 }
 
@@ -152,7 +175,7 @@
         margin-left:0px;
     }
     100% { 
-        margin-left:50px;
+        margin-left:random(80)+px;
     }
 }
 
@@ -161,6 +184,6 @@
         margin-left:0px;
     }
     100% { 
-        margin-left:50px;
+        margin-left:random(80)+px;
     }
 }
